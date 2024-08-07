@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav
-            className="fixed top-0 w-full bg-lightGray dark:bg-darkModeGray shadow-md z-10 transition-colors duration-300">
+            className="fixed top-0 w-full bg-lightGray dark:bg-darkModeGray shadow-md z-10 transition-colors duration-500">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
@@ -29,6 +29,8 @@ const Navbar: React.FC = () => {
                                className="text-darkGray dark:text-lightGray px-3 py-2 rounded-md text-sm font-medium">Home</a>
                             <a href="#technologies"
                                className="text-darkGray dark:text-lightGray px-3 py-2 rounded-md text-sm font-medium">Technologies</a>
+                            <a href="#aboutme"
+                               className="text-darkGray dark:text-lightGray px-3 py-2 rounded-md text-sm font-medium">About me</a>
                             <a href="#contact"
                                className="text-darkGray dark:text-lightGray px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                         </div>
@@ -36,7 +38,7 @@ const Navbar: React.FC = () => {
                     <div className="hidden md:flex items-center">
                         <button
                             onClick={toggleDarkMode}
-                            className="bg-coral text-white px-3 py-2 rounded-md text-sm font-medium flex items-center"
+                            className="bg-darkGray dark:bg-lightCoral text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors duration-500"
                             aria-label="Toggle dark mode"
                         >
                             {isDarkMode ? <FaSun className="mr-2"/> : <FaMoon className="mr-2"/>}
@@ -53,7 +55,7 @@ const Navbar: React.FC = () => {
                         </button>
                         <button
                             onClick={toggleDarkMode}
-                            className="ml-4 bg-coral text-white px-3 py-2 rounded-md text-sm font-medium flex items-center"
+                            className="ml-4 bg-dark text-darkGray px-3 py-2 rounded-md text-sm font-medium flex items-center"
                             aria-label="Toggle dark mode"
                         >
                             {isDarkMode ? <FaSun/> : <FaMoon/>}
@@ -66,6 +68,8 @@ const Navbar: React.FC = () => {
                 <a href="#" className="block text-darkGray dark:text-lightGray px-4 py-2 text-sm font-medium">Home</a>
                 <a href="#technologies"
                    className="block text-darkGray dark:text-lightGray px-4 py-2 text-sm font-medium">Technologies</a>
+                <a href="#aboutme"
+                   className="block text-darkGray dark:text-lightGray px-4 py-2 text-sm font-medium">About me</a>
                 <a href="#contact"
                    className="block text-darkGray dark:text-lightGray px-4 py-2 text-sm font-medium">Contact</a>
             </div>

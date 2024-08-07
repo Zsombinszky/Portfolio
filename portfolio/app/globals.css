@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick-theme.css";
+@import "slick-carousel/slick/slick.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,45 +9,58 @@ html {
     scroll-behavior: smooth;
 }
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
+@layer base {
+    .dark .bg-lightGray {
+        @apply bg-darkModeGray;
+        transition: background-color 0.5s ease;
     }
-}
 
-body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-    ) rgb(var(--background-start-rgb));
+    .dark .text-darkGray {
+        color: theme('colors.lightGray');
+        transition: color 0.5s ease;
+    }
+
+    .dark .bg-coral {
+        @apply bg-darkModeLightGray;
+        transition: background-color 0.5s ease;
+    }
+
+    .bg-coral {
+        transition: background-color 0.5s ease;
+    }
 }
 
 @layer utilities {
     .text-balance {
         text-wrap: balance;
     }
-}
 
-@layer base {
-    .dark .bg-lightGray {
-        @apply bg-darkModeGray;
+    .hover\:bg-lightOrange:hover {
+        background-color: theme('colors.lightOrange');
+        transition: background-color 0.5s ease-in-out;
     }
 
-    .dark .text-darkGray {
-        @apply text-lightGray;
-    }
-
-    .dark .bg-coral {
-        @apply bg-darkModeLightGray;
+    .dark .hover\:bg-coral:hover {
+        background-color: theme('colors.lightCoral');
+        transition: background-color 0.5s ease-in-out;
     }
 }
+
+@keyframes wobble {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(-5deg); }
+    20% { transform: rotate(5deg); }
+    30% { transform: rotate(-5deg); }
+    40% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    60% { transform: rotate(5deg); }
+    70% { transform: rotate(-5deg); }
+    80% { transform: rotate(5deg); }
+    90% { transform: rotate(-2.5deg); }
+    100% { transform: rotate(0); }
+}
+
+.shake-wobble:hover {
+    animation: wobble 0.9s ease;
+}
+
