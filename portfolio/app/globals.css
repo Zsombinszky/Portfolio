@@ -1,12 +1,135 @@
 @import "slick-carousel/slick/slick-theme.css";
 @import "slick-carousel/slick/slick.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --font-sora: "Sora", sans-serif;
+    --font-code: "Source Code Pro", monospace;
+    --font-grotesk: "Space Grotesk", sans-serif;
+}
+
+.swiper-cube-shadow:before {
+    background: #1570EF !important;
+}
+
+.will-change-transform {
+    will-change: transform, opacity;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #AC6AFF;
+    border-radius: 10px;
+    border: #1a1a1a solid 1px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #6F2DA8;
+}
+
+.glow-text {
+    text-shadow: 2px 4px 6px #000000;
+}
+
+.glow-text-2 {
+    text-shadow: 1px 2px 6px #000000;
+}
+
+.gradient-background-1 {
+    background-image: linear-gradient(to bottom right, #0E0C15, #0E0C15);
+}
+
+.gradient-background-2 {
+    background-image: linear-gradient(to bottom right, #15131D, #0E0C15);
+}
+
+.gradient-background-3 {
+    background-image: linear-gradient(to bottom right, #252134, #3F3A52);
+}
+
+.gradient-background-4 {
+    background-image: linear-gradient(to bottom right, #252134, #43435C);
+}
+
+.gradient-background-5 {
+    background-image: linear-gradient(to bottom right, #1B1B2E, #0E0C15);
+}
+
+.gradient-background-6 {
+    background-image: linear-gradient(to bottom right, #252134, #15131D, #0E0C15);
+}
+
+.gradient-background-7 {
+    background-image: linear-gradient(to bottom right, #43435C, #1B1B2E);
+}
+
+.gradient-background-8 {
+    background-image: linear-gradient(to bottom right, #474060, #252134);
+}
+
+.gradient-border {
+    background-image: linear-gradient(to right, #BADEFE, #858DFF, #7ADB78);
+    background-clip: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.gradient-mask {
+    mask-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 26%, rgba(0, 0, 0, 1) 78%, rgba(0, 0, 0, 0) 100%);
+}
+
+#curve {
+    fill: transparent;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
 }
 
 @layer base {
@@ -47,17 +170,216 @@ html {
 }
 
 @keyframes wobble {
-    0% { transform: rotate(0); }
-    10% { transform: rotate(-5deg); }
-    20% { transform: rotate(5deg); }
-    30% { transform: rotate(-5deg); }
-    40% { transform: rotate(5deg); }
-    50% { transform: rotate(-5deg); }
-    60% { transform: rotate(5deg); }
-    70% { transform: rotate(-5deg); }
-    80% { transform: rotate(5deg); }
-    90% { transform: rotate(-2.5deg); }
-    100% { transform: rotate(0); }
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(-5deg);
+    }
+    20% {
+        transform: rotate(5deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    40% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    70% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-2.5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.perspective-container {
+    perspective: 1000px; /* Adjust as needed for desired depth */
+}
+
+.transform-3d {
+    transform: rotateY(-10deg); /* Rotate to push right side into the background */
+    transform-style: preserve-3d; /* Ensure child elements are affected by the 3D transformation */
+}
+
+.rotate-25 {
+    @apply rotate-[25deg]
+}
+
+.rotate-45 {
+    @apply rotate-[45deg]
+}
+
+.rotate-90 {
+    @apply rotate-[90deg]
+}
+
+.rotate-135 {
+    @apply rotate-[135deg]
+}
+
+.rotate-180 {
+    @apply rotate-[180deg]
+}
+
+.rotate-225 {
+    @apply rotate-[225deg]
+}
+
+.rotate-270 {
+    @apply rotate-[270deg]
+}
+
+.rotate-315 {
+    @apply rotate-[315deg]
+}
+
+.rotate-360 {
+    @apply rotate-[360deg]
+}
+
+.rotate-30 {
+    @apply rotate-[30deg]
+}
+
+.rotate-60 {
+    @apply rotate-[60deg]
+}
+
+.rotate-90 {
+    @apply rotate-[90deg]
+}
+
+.rotate-120 {
+    @apply rotate-[120deg]
+}
+
+.rotate-150 {
+    @apply rotate-[150deg]
+}
+
+.rotate-180 {
+    @apply rotate-[180deg]
+}
+
+.rotate-210 {
+    @apply rotate-[210deg]
+}
+
+.rotate-240 {
+    @apply rotate-[240deg]
+}
+
+.rotate-270 {
+    @apply rotate-[270deg]
+}
+
+.rotate-300 {
+    @apply rotate-[300deg]
+}
+
+.rotate-330 {
+    @apply rotate-[330deg]
+}
+
+.rotate-360 {
+    @apply rotate-[360deg]
+}
+
+.-rotate-25 {
+    @apply rotate-[-25deg]
+}
+
+.-rotate-45 {
+    @apply rotate-[-45deg]
+}
+
+.-rotate-90 {
+    @apply rotate-[-90deg]
+}
+
+.-rotate-135 {
+    @apply rotate-[-135deg]
+}
+
+.-rotate-180 {
+    @apply rotate-[-180deg]
+}
+
+.-rotate-225 {
+    @apply rotate-[-225deg]
+}
+
+.-rotate-270 {
+    @apply rotate-[-270deg]
+}
+
+.-rotate-315 {
+    @apply rotate-[-315deg]
+}
+
+.-rotate-360 {
+    @apply rotate-[-360deg]
+}
+
+.-rotate-30 {
+    @apply rotate-[-30deg]
+}
+
+.-rotate-60 {
+    @apply rotate-[-60deg]
+}
+
+.-rotate-90 {
+    @apply rotate-[-90deg]
+}
+
+.-rotate-120 {
+    @apply rotate-[-120deg]
+}
+
+.-rotate-150 {
+    @apply rotate-[-150deg]
+}
+
+.-rotate-180 {
+    @apply rotate-[-180deg]
+}
+
+.-rotate-210 {
+    @apply rotate-[-210deg]
+}
+
+.-rotate-240 {
+    @apply rotate-[-240deg]
+}
+
+.-rotate-270 {
+    @apply rotate-[-270deg]
+}
+
+.-rotate-300 {
+    @apply rotate-[-300deg]
+}
+
+.-rotate-330 {
+    @apply rotate-[-330deg]
+}
+
+.-rotate-360 {
+    @apply rotate-[-360deg]
 }
 
 .shake-wobble:hover {

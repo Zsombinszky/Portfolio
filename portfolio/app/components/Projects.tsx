@@ -1,87 +1,26 @@
-import React from 'react'
-import ProjectCard from "@/app/components/ProjectCard";
+import React from 'react';
+import Carousel from "@/app/components/Carousel";
+import Button from "@/app/components/Button";
+import {bankingProject} from "@/constants";
 
-const projects = [
-    {
-        id: 1,
-        title: "Project One",
-        description: "A brief description of project one.",
-        images: [
-            {
-                image: "/images/cameleoncase1.jpg",
-                alt: "Users can upload pictures and design phone cases."
-            },
-            {
-                image: "/images/cameleoncase2.jpg",
-                alt: "Users can upload pictures and design phone cases."
-            },
-            {
-                image: "/images/cameleoncase3.jpg",
-                alt: "Users can upload pictures and design phone cases."
-            }
-        ],
-        technologies: [
-            {
-                name: "Next.js",
-                logo: "/logos/next.svg"
-            },
-            {
-                name: "TypeScript",
-                logo: "/logos/typescript.svg"
-            },
-            {
-                name: "TailwindCSS",
-                logo: "/logos/tailwindcss.svg"
-            },
-
-        ],
-        link: "https://example1.com"
-    },
-    {
-        id: 2,
-        title: "Project Two",
-        description: "A brief description of project two.",
-        images: [
-            {
-                image: "/images/cameleoncase1.jpg",
-                alt: "Users can upload pictures and design phone cases."
-            },
-            {
-                image: "/images/cameleoncase2.jpg",
-                alt: "Users can upload pictures and design phone cases."
-            },
-            {
-                image: "/images/cameleoncase3.jpg",
-                alt: "Users can upload pictures and design phone cases."
-            }
-        ],
-        technologies: [
-            {
-                name: "Next.js",
-                logo: "/logos/next.svg"
-            },
-            {
-                name: "TypeScript",
-                logo: "/logos/typescript.svg"
-            },
-            {
-                name: "TailwindCSS",
-                logo: "/logos/tailwindcss.svg"
-            },
-
-        ],
-        link: "https://example2.com"
-    },
-];
-
-const Projects: React.FC = () => {
+const Projects = () => {
     return (
-        <section id="projects"
-                 className="bg-lightGray dark:bg-darkModeGray p-6 md:p-12 lg:p-24 xl:p-32 transition-colors duration-500 ease-in-out">
-            {projects.map((project) => (
-                <ProjectCard project={project}/>
-            ))}
+        <section
+            id="gallery"
+            className="relative w-full h-screen overflow-hidden bg-cover bg-no-repeat bg-center"
+            style={{backgroundImage: 'url(/backgrounds/aboutmebg.jpg)'}}
+        >
+            <div className="relative mt-8 w-full flex flex-col items-center px-4 md:px-16">
+                <h1 className="text-color-5 glow-text font-bold text-8xl text-center mt-12 mb-8">Projects</h1>
+                {/*  carousel */}
+                <div>
+                    <div>
+                        <Carousel images={bankingProject.images}/>
+                    </div>
+                </div>
+            </div>
         </section>
-    )
-}
-export default Projects
+    );
+};
+
+export default Projects;
