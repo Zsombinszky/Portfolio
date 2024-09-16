@@ -29,7 +29,7 @@ const FeatureTab = (props: FeatureTabProps) => {
         };
         animate(xPercentage, [0, 100, 100, 0, 0], options);
         animate(yPercentage, [0, 0, 100, 100, 0], options);
-    }, [props.selected]);
+    }, [props.selected, xPercentage, yPercentage]);
 
     const handleTabHover = () => {
         if (dotLottieRef.current === null) return;

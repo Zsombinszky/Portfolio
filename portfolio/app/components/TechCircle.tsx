@@ -50,7 +50,7 @@ const TechCircle = () => {
 
     useEffect(() => {
         startSpinning();
-    }, []);
+    }, [startSpinning]);
 
     return (
         <div

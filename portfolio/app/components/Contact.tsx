@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         >
             <div className="max-w-7xl mt-24 mx-auto">
                 <h2 className="text-5xl md:text-8xl glow-text font-bold text-color-5 dark:text-lightGray mb-12">
-                    Let's Connect
+                    Let&apos;s Connect
                 </h2>
                 <div className="flex flex-col md:flex-row justify-between">
                     <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col items-center">

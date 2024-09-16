@@ -2,10 +2,11 @@ import React, {ComponentPropsWithoutRef, RefObject} from "react";
 
 declare type WordArray = string[];
 
-declare type NewButtonProps = {
+declare type ButtonProps = {
     children: React.ReactNode,
     href?: string,
-    onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
+    onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>,
+    type?: string
 };
 
 declare type AnimatedHeroText1Props = {

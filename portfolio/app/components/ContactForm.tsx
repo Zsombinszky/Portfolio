@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import emailjs from 'emailjs-com';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
+import {useForm} from 'react-hook-form';
+import {zodResolver} from '@hookform/resolvers/zod';
+import {z} from 'zod';
 import Button from "@/app/components/Button";
-import { ToastContainer, toast, Slide } from 'react-toastify';
+import {ToastContainer, toast, Slide} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CustomInput from './CustomInput'; // Import CustomInput component
 
@@ -21,17 +21,18 @@ type FormValues = z.infer<typeof ContactSchema>;
 const ContactForm = () => {
     const [isLoading, setIsLoading] = useState(false);
 
-    const { register, handleSubmit, formState: { errors }, reset } = useForm<FormValues>({
+    // Initialize refs with null
+    const successSound = useRef<HTMLAudioElement | null>(null);
+    const errorSound = useRef<HTMLAudioElement | null>(null);
+
+    const {register, handleSubmit, formState: {errors}, reset} = useForm<FormValues>({
         resolver: zodResolver(ContactSchema),
     });
 
-    let successSound: HTMLAudioElement;
-    let errorSound: HTMLAudioElement;
-
     // Preload audio files using useEffect
     useEffect(() => {
-        successSound = new Audio('/sounds/success.mp3');
-        errorSound = new Audio('/sounds/error.mp3');
+        successSound.current = new Audio('/sounds/success.mp3');
+        errorSound.current = new Audio('/sounds/error.mp3');
     }, []);
 
     const onSubmit = (data: FormValues) => {
@@ -50,7 +51,7 @@ const ContactForm = () => {
                     theme: "dark",
                     transition: Slide,
                 });
-                successSound.play();
+                if (successSound.current) successSound.current.play();
                 reset();
             }, (error) => {
                 console.log(error.text);
@@ -65,7 +66,7 @@ const ContactForm = () => {
                     theme: "dark",
                     transition: Slide,
                 });
-                errorSound.play();
+                if (errorSound.current) errorSound.current.play();
             }).finally(() => {
             // Set loading state back to false
             setIsLoading(false);
@@ -105,7 +106,8 @@ const ContactForm = () => {
                 />
                 {/* Message input is a textarea, so handle it separately */}
                 <div className="mb-4">
-                    <label htmlFor="message" className="block glow-text font-semibold text-planetGreen mb-2">Message</label>
+                    <label htmlFor="message"
+                           className="block glow-text font-semibold text-planetGreen mb-2">Message</label>
                     <textarea
                         id="message"
                         rows={4}
@@ -120,7 +122,7 @@ const ContactForm = () => {
                     {isLoading ? 'Sending...' : 'Send Message'}
                 </Button>
             </form>
-            <ToastContainer />
+            <ToastContainer/>
         </div>
     );
 };
