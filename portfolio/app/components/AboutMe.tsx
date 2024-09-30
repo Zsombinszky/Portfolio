@@ -92,7 +92,7 @@ const AboutMe = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{once: true}}
-                        variants={fadeFromRightWithDelay(0.6)}
+                        variants={fadeFromRightWithDelay(0.8)}
                         className="w-full"
                     >
                         <p className="~text-lg/xl glow-text font-semibold text-lightGray mb-8">
@@ -105,7 +105,7 @@ const AboutMe = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{once: true}}
-                        variants={fadeFromRightWithDelay(0.8)}
+                        variants={fadeFromRightWithDelay(1.2)}
                         className="w-full"
                     >
                         <p className="~text-lg/xl glow-text font-semibold text-lightGray mb-8">
@@ -118,7 +118,7 @@ const AboutMe = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{once: true}}
-                        variants={fadeFromRightWithDelay(1)}
+                        variants={fadeFromRightWithDelay(1.6)}
                         className="grid grid-cols-2 w-full mb-12"
                     >
                         <div className="flex md:hidden items-center justify-center">

@@ -43,7 +43,7 @@ const Hero = () => {
                         initial={{opacity: 0, y: 50}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.8, ease: "easeOut"}}
-                        className="mt-6 glow-text text-center text-4xl sm:text-6xl lg:text-8xl font-bold text-color-5 mb-4">
+                        className="glow-text text-center text-4xl sm:text-6xl lg:text-8xl font-bold text-color-5 mb-4">
                         Welcome to My Portfolio
                     </motion.h1>
                     <AnimatedHeroText1 words={heroText}/>
