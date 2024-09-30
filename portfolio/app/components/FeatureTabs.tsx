@@ -1,8 +1,8 @@
 'use client';
-import React, { useState } from "react";
-import { animate, motion, useMotionTemplate, useMotionValue, ValueAnimationTransition } from "framer-motion";
+import React, {useState} from "react";
+import {animate, motion, useMotionTemplate, useMotionValue, ValueAnimationTransition} from "framer-motion";
 import FeatureTab from "./FeatureTab";
-import { tabs } from "@/constants";
+import {tabs} from "@/constants";
 import productImage from '@/public/projects/banking/images/homepage.png';
 
 const FeatureTabs: React.FC = () => {
@@ -28,8 +28,8 @@ const FeatureTabs: React.FC = () => {
     };
 
     return (
-        <div className="bg-black/50 p-4 rounded-xl">
-            <div className="flex flex-col lg:flex-row gap-3">
+        <div className="bg-black/50 ~p-3/4 ~mx-4/6 rounded-xl">
+            <div className="flex ~gap-3/4">
                 {tabs.map((tab, index) => (
                     <FeatureTab
                         {...tab}
@@ -39,7 +39,7 @@ const FeatureTabs: React.FC = () => {
                     />
                 ))}
             </div>
-            <div className="border bg-white/60 mt-4 border-white/20 p-2.5 rounded-xl">
+            <div className="border bg-white/60 ~mt-3/4 border-white/20 p-2.5 rounded-xl">
                 <motion.div
                     className="aspect-video bg-cover border border-white/20 rounded-lg"
                     style={{

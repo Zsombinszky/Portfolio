@@ -19,12 +19,12 @@ export const FindMe: React.FC = () => {
     };
 
     return (
-        <section className="mt-12">
-            <p className="text-2xl mx glow-text mb-4 text-lightGray font-medium dark:text-lightGray text-center">
+        <section className="~mt-6/12 ~mb-4/0">
+            <p className="text-2xl mx glow-text mb-4 text-lightGray font-medium text-center">
                 Or <span className="text-color-1">find</span> me on LinkedIn and GitHub.
             </p>
             <div
-                className="relative h-[400px] w-[520px] rounded-xl overflow-hidden"
+                className="relative h-[342px] w-[480px] md:h-[432px] md:w-[576px] rounded-xl overflow-hidden"
                 onMouseMove={handleMouseMove}
                 onMouseLeave={() => setMousePosition({x: -1000, y: -1000})}
             >

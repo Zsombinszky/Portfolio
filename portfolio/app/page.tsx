@@ -5,7 +5,6 @@ import Projects from "@/app/components/Projects";
 import Hero from "@/app/components/Hero";
 import Technologies from "@/app/components/Technologies";
 import AboutMe from "@/app/components/AboutMe";
-import TestComponent from "@/app/components/TestComponent";
 
 
 export default function Home() {

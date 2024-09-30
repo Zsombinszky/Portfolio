@@ -45,23 +45,23 @@ const TechnologyCard = ({
             onClick={onClick}
             onMouseEnter={onMouseEnter}
             animate={{
-                height: isExpanded ? 600 : 80,
-                width: isExpanded ? 500 : 350,
+                height: isExpanded ? 'auto' : '4rem',
+                width: isExpanded ? '30%' : '20%',
             }}
             transition={{duration: 0.5, ease: 'easeInOut'}}
-            className={`flex cursor-pointer flex-col items-center absolute top-[40%] ${sideClass} w-[300px] h-[60px] rounded-2xl`}
+            className={`flex cursor-pointer flex-col items-center absolute top-[40%] ${sideClass} w-full rounded-2xl`}
         >
-            <p className="text-planetGreen glow-text text-3xl mt-2 text-center text-shadow-md font-bold tracking-wider">
+            <p className="text-planetGreen glow-text ~text-xl/3xl mt-2 text-center text-shadow-md font-bold tracking-wider">
                 {title.toUpperCase()}
             </p>
             {!isExpanded ? (
-                <DotLottiePlayer ref={dotLottieRef} src={"/lottie/click.lottie"} className="h-5 w-5 mt-2"/>
+                <DotLottiePlayer ref={dotLottieRef} src={"/lottie/click.lottie"} className="~h-4/6 ~w-4/6 mt-2"/>
             ) : (
                 <div className="w-full h-full overflow-auto">
                     {/* Only show the ul after the card has fully expanded */}
                     {hasExpanded && (
                         <motion.ul
-                            className={`flex flex-col gap-4 p-4`}
+                            className={`flex flex-col ~gap-2/4 ~p-2/4`}
                             initial={{opacity: 0, x: side === 'left' ? -50 : 50}}
                             animate={{opacity: 1, x: 0}}
                             transition={{duration: 0.5, ease: 'easeInOut'}}
@@ -69,25 +69,25 @@ const TechnologyCard = ({
                             {technologies.map((item: Technology, index: number) => (
                                 <motion.li
                                     key={index}
-                                    className={`p-3 rounded-lg h-auto flex gap-4 ${side === 'left' ? 'bg-gradient-to-r flex-row' : 'bg-gradient-to-l flex-row-reverse'} from-planetGreen via-lightCoral to-color-7 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
+                                    className={`~p-2/4 rounded-lg h-auto flex gap-4 ${side === 'left' ? 'bg-gradient-to-r flex-row' : 'bg-gradient-to-l flex-row-reverse'} from-planetGreen via-lightCoral to-color-7 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                                     initial={{opacity: 0, y: 20}}
                                     animate={{opacity: 1, y: 0}}
                                     transition={{duration: 0.3, delay: index * 0.1}} // Staggered animations
                                 >
                                     {/* Technology Logo */}
                                     <div
-                                        className="w-[3rem] h-[3rem] bg-n-8 rounded-xl flex-shrink-0 flex items-center justify-center">
-                                        <Image className="m-auto" width={24} height={24} src={item.logo}
+                                        className="~w-[3rem]/[4rem] ~h-[3rem]/[4rem] bg-n-8 rounded-xl flex-shrink-0 flex items-center justify-center">
+                                        <Image className="m-auto w-[60%] " width={24} height={24} src={item.logo}
                                                alt={item.name}/>
                                     </div>
 
                                     {/* Technology Details */}
                                     <div className="flex flex-col">
-                                        <h3 className={`text-darkModeGray font-bold text-lg ${side === 'left' ? 'text-start' : 'text-end'}`}>{item.name}</h3>
+                                        <h3 className={`text-darkModeGray font-bold ~text-sm/lg ${side === 'left' ? 'text-start' : 'text-end'}`}>{item.name}</h3>
                                         <Link
-                                            className={`text-sm text-[#4B0082] hover:text-planetGreen hover:underline ${side === 'left' ? 'text-start' : 'text-end'}`}
+                                            className={`~text-xs/sm text-color-9 hover:text-planetGreen hover:underline ${side === 'left' ? 'text-start' : 'text-end'}`}
                                             href={item.link}>{item.link}</Link>
-                                        <p className={`text-sm text-darkModeGray font-semibold mt-1 ${side === 'left' ? 'text-start' : 'text-end'}`}>{item.desc}</p>
+                                        <p className={`~text-xs/sm text-darkModeGray font-semibold mt-1 ${side === 'left' ? 'text-start' : 'text-end'}`}>{item.desc}</p>
                                     </div>
                                 </motion.li>
                             ))}

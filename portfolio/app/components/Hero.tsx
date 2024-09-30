@@ -36,29 +36,30 @@ const Hero = () => {
             <AnimatedName myName={myName}/>
             <BackgroundShapes parallaxRef={container}/>
 
-            <div className="flex mt-24 flex-col md:flex-row items-center justify-center md:justify-evenly p-6 md:p-12">
+            <div className="flex flex-col lg:flex-row ~mt-12/24 items-center justify-evenly ~p-6/12">
                 {/* Left Side: Title and Texts */}
-                <div className="h-[80vh] items-center flex flex-col text-center md:text-left md:w-1/2 mb-6 md:mb-0">
+                <div className="h-auto items-center flex flex-col w-full md:w-[80%] lg:w-1/2 ~mb-8/0">
                     <motion.h1
                         initial={{opacity: 0, y: 50}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.8, ease: "easeOut"}}
-                        className="text-3xl mt-6 glow-text text-center md:text-5xl lg:text-8xl font-bold text-color-5 mb-4">
+                        className="mt-6 glow-text text-center text-4xl sm:text-6xl lg:text-8xl font-bold text-color-5 mb-4">
                         Welcome to My Portfolio
                     </motion.h1>
                     <AnimatedHeroText1 words={heroText}/>
                     <AnimatedHeroText2 words={heroText} words2={heroText2}/>
-                    <DotLottiePlayer autoplay loop speed={0.8} src={"/lottie/arrow1.json"} className="h-12 w-12 mb-4"/>
+                    <DotLottiePlayer autoplay loop speed={0.8} src={"/lottie/arrow1.json"}
+                                     className="~h-8/12 ~w-8/12 mb-4"/>
 
                     <Button href={"#gallery"}>
                         View My Work
                     </Button>
                 </div>
                 {/* Right Side: Hero Image */}
-                <div className="relative w-1/2 md:w-1/3 lg:w-1/5 mt-6 md:mt-0 flex justify-center">
+                <div className="relative w-1/3 md:w-1/4 lg:w-1/5 mt-0 flex justify-center">
                     <div
                         ref={heroImageRef}
-                        className="relative w-full"
+                        className="relative w-[100%] sm:w-[75%]  lg:w-full"
                     >
                         <Image
                             priority

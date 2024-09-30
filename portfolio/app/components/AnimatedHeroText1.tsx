@@ -5,7 +5,7 @@ import {AnimatedHeroText1Props} from '@/types';
 const AnimatedHeroText1 = ({words}: AnimatedHeroText1Props) => {
     return (
         <motion.div
-            className="text-xl text-lightGray glow-text text-center mt-12 md:text-2xl lg:text-4xl font-medium mb-6"
+            className="text-lightGray glow-text text-center ~mt-8/12 ~text-2xl/4xl font-medium ~mb-3/6"
         >
             {/* Split the text into lines or sentences */}
             <motion.div className="bg-gradient-to-r from-transparent via-black/50  to-transparent"

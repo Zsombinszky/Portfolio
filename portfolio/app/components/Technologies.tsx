@@ -53,7 +53,7 @@ const Technologies = () => {
             id={"technologies"}
             ref={container}
             style={{backgroundImage: 'url(/backgrounds/saturn1.jpeg)'}}
-            className="relative flex justify-center bg-cover overflow-hidden h-screen w-full bg-no-repeat bg-center items-center"
+            className="relative flex justify-center bg-cover overflow-hidden h-screen w-full bg-no-repeat ~px-4/12 bg-center items-center"
         >
             <TechnologyCard
                 title={'Frontend'}

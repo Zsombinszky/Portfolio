@@ -1,14 +1,17 @@
 import type {Config} from "tailwindcss";
+import fluid, {extract, screens, fontSize} from 'fluid-tailwind'
 
 const config: Config = {
-    darkMode: 'class',
-    content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
+    content: {
+        files: [
+            "./index.html",
+            "./src/**/*.{js,ts,jsx,tsx}",
+            "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+            "./components/**/*.{js,ts,jsx,tsx,mdx}",
+            "./app/**/*.{js,ts,jsx,tsx,mdx}",
+        ],
+        extract
+    },
     theme: {
         extend: {
             colors: {
@@ -21,6 +24,8 @@ const config: Config = {
                     6: "#FF98E2",
                     7: '#7b2ff7',
                     8: '#1570EF',
+                    9: '#4B0082',
+                    10: '#2BA7FF'
                 },
                 stroke: {
                     1: "#26242C",
@@ -55,8 +60,15 @@ const config: Config = {
                 planetGreen: '#23F0C7',
             },
         },
+        screens,
+        fontSize
     },
-    plugins: [require('tailwind-scrollbar-hide')],
+    plugins: [
+        require('tailwind-scrollbar-hide'),
+        fluid,
+    ],
 };
 
 export default config;
+
+

@@ -5,7 +5,7 @@ import {AnimatedHeroText2Props} from "@/types";
 const AnimatedHeroText1 = ({words2, words}: AnimatedHeroText2Props) => {
     return (
         <motion.div
-            className="text-xl text-lightGray glow-text text-center mt-12 md:text-2xl lg:text-4xl font-medium  mb-8"
+            className="text-lightGray glow-text text-center ~mt-8/12 ~text-2xl/4xl font-medium  ~mb-4/8"
         >
             <motion.div className="bg-gradient-to-r from-transparent via-black/50  to-transparent"
                         initial={{opacity: 0}}

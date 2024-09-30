@@ -165,6 +165,6 @@ export const tabs = [
     },
 ];
 
-export const heroText = "Hi, I'm a junior full stack developer with a strong passion for frontend.".split(' ');
+export const heroText = "Hi, I'm a junior Full-Stack developer with a strong passion for frontend.".split(' ');
 export const heroText2 = "I craft user-focused applications that are both beautiful and functional.".split(' ');
 export const myName = 'ZSOMBOR PÓCS';

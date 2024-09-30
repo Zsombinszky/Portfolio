@@ -50,13 +50,13 @@ const FeatureTab = (props: FeatureTabProps) => {
                     className="absolute inset-0 bg-blue-400/15 -m-px border border-color-8 rounded-xl"
                 ></motion.div>
             )}
-            <div className="h-12 w-12 border border-white rounded-lg inline-flex items-center justify-center">
-                <DotLottiePlayer ref={dotLottieRef} src={props.icon} className="h-5 w-5" autoplay/>
+            <div className="~h-8/12 ~w-8/12 border border-white rounded-lg inline-flex items-center justify-center">
+                <DotLottiePlayer ref={dotLottieRef} src={props.icon} className="~h-4/6 ~w-4/6" autoplay/>
             </div>
-            <div className="font-semibold text-darkModeGray ">{props.title}</div>
+            <div className="font-semibold ~text-sm/lg text-darkModeGray ">{props.title}</div>
             {props.isNew && (
                 <div
-                    className="text-sm absolute left-[45%] -top-4 rounded-full px-2 py-2.5 bg-color-8 text-black font-semibold">new</div>
+                    className="~text-xs/sm absolute left-[45%] -top-4 rounded-full px-2 py-2.5 bg-color-8 text-black font-semibold">new</div>
             )}
         </div>
     );

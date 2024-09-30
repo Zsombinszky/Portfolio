@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 
 const AnimatedName = ({myName}: { myName: string }) => {
     return (
@@ -30,13 +30,13 @@ const AnimatedName = ({myName}: { myName: string }) => {
                 times: [0, 0.3, 0.8, 1],    // Times at which the animation should reach the specified values
                 delay: 6,                   // Delay before the animation starts (in seconds)
             }}
-            className="text-9xl font-bold absolute bottom-0 left-0 whitespace-nowrap"
+            className="font-bold absolute bottom-0 left-0 whitespace-nowrap"
             style={{
                 WebkitBackgroundClip: 'text', // Ensures the gradient only fills the text
                 color: 'transparent',          // Makes the text color transparent to show gradient
             }}
         >
-            <motion.p>{myName}</motion.p>
+            <motion.p className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl">{myName}</motion.p>
         </motion.div>
     );
 };

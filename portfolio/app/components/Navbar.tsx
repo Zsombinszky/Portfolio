@@ -19,7 +19,8 @@ const Navbar: React.FC = () => {
                     <div className="flex items-center justify-between h-20">
                         <div className="flex items-center flex-grow">
                             <div className="flex-shrink-0">
-                                <Image className="rounded-full" width={60} height={60} src="/images/navbarlogo.jpg" alt="Logo"/>
+                                <Image className="rounded-full" width={60} height={60} src="/images/navbarlogo.jpg"
+                                       alt="Logo"/>
                             </div>
                             <div className="hidden md:flex justify-center flex-grow">
                                 <div className="flex space-x-12">
@@ -73,13 +74,42 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
                 {/* Mobile Menu */}
-                <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-lightGray`}>
-                    <Link href="/#" className="block text-darkGray px-4 py-2 text-sm font-medium">Home</Link>
-                    <Link href="/#technologies"
-                          className="block text-darkGray px-4 py-2 text-sm font-medium">Technologies</Link>
-                    <Link href="/#aboutme" className="block text-darkGray px-4 py-2 text-sm font-medium">About me</Link>
-                    <Link href="/#gallery" className="block text-darkGray px-4 py-2 text-sm font-medium">Gallery</Link>
-                    <Link href="/#contact" className="block text-darkGray px-4 py-2 text-sm font-medium">Contact</Link>
+                <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} items-center bg-[#020509]/90 flex flex-col`}>
+                    <Link
+                        href="/#home"
+                        className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
+                        style={{fontFamily: 'var(--font-code)'}}
+                    >
+                        HOME
+                    </Link>
+                    <Link
+                        href="/#technologies"
+                        className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
+                        style={{fontFamily: 'var(--font-code)'}}
+                    >
+                        TECHNOLOGIES
+                    </Link>
+                    <Link
+                        href="/#aboutme"
+                        className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
+                        style={{fontFamily: 'var(--font-code)'}}
+                    >
+                        ABOUT ME
+                    </Link>
+                    <Link
+                        href="/#gallery"
+                        className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
+                        style={{fontFamily: 'var(--font-code)'}}
+                    >
+                        PROJECTS
+                    </Link>
+                    <Link
+                        href="/#contact"
+                        className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
+                        style={{fontFamily: 'var(--font-code)'}}
+                    >
+                        CONTACT
+                    </Link>
                 </div>
             </nav>
         </section>

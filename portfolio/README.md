@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zsombor Pócs - Portfolio Website
 
-## Getting Started
+Welcome to my personal portfolio website! I'm **Zsombor Pócs**, a junior full-stack developer passionate about creating
+modern, user-friendly web applications. This portfolio showcases my skills, projects, and the journey I've embarked on
+as a developer.
 
-First, run the development server:
+## 🚀 Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This portfolio is built with:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Additional Libraries & Tools
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Framer Motion**: For smooth animations
+- **SwiperJS** & **React Slick**: For carousels and sliders
+- **Lottie**: For integrating captivating animations
+- **React Icons**: To enhance visual appeal
+- **EmailJS** & **Toastify**: For handling and styling the contact form
+- **Zod**: For robust form validation
 
-## Learn More
+## 📑 Table of Contents
 
-To learn more about Next.js, take a look at the following resources:
+1. **Navbar**: Smooth navigation across different sections
+2. **Hero Section**: A stylish landing page featuring my personal image
+3. **Technologies Section**: Showcasing the programming languages and tools I use
+4. **About Me**: Learn more about my background and see a more personal side of me
+5. **Projects**: Displaying my personal projects with brief descriptions
+6. **Contact Section**: Find me on GitHub, LinkedIn, or send me an email
+7. **Project Detail Section**: In-depth information about each project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Responsive Design**: Works seamlessly across all devices
+- **Smooth Animations**: Enhanced user experience with Framer Motion
+- **Interactive Elements**: Carousel sliders, parallax effects, and more
+- **Dynamic Contact Form**: Users can reach out directly via email with integrated form validation
 
-## Deploy on Vercel
+## 📸 Why I Love This Project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This portfolio is more than just a website; it's a reflection of who I am as a developer. Building it has been an
+incredible learning experience where I explored various tools and libraries, pushing the boundaries of my creativity.
+Every section tells a part of my story, and I hope it gives you a glimpse into my passion for development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🌐 Explore My Portfolio / Live Preview 🌐
+
+Check out my portfolio to learn more about my work and the technologies I love to use. Whether you're a potential
+employer, collaborator, or just someone curious about my journey, I hope you find something here that resonates with
+you.
+You can view my portfolio live at: [portfolio-ashy-phi-19.vercel.app](https://portfolio-ashy-phi-19.vercel.app)
