@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-[80%] md:w-[45%] max-h-[520px] rounded-3xl"
+    data-testid="contact-form"
+    style="box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); border: 1px solid rgba(255,255,255,0.18); font-family: var(--font-code);"
+  >
+    <form
+      class="px-6 py-2 rounded-lg shadow-lg"
+    >
+      <h3
+        class="~text-xl/3xl glow-text text-center md:text-start font-bold text-color-1 ~mb-2/4"
+      >
+        Contact Form
+      </h3>
+      <div
+        class="flex md:flex-col"
+      >
+        <div
+          class="w-full ~mb-2/4 px-1"
+          data-testid="custominput"
+        >
+          <label
+            class="block ~text-base/lg text-planetGreen font-semibold mb-2"
+            for="name"
+          >
+            Name
+          </label>
+          <input
+            class="w-full p-3 bg-darkModeGray border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-color-1 "
+            id="name"
+            name="name"
+            type="text"
+          />
+        </div>
+        <div
+          class="w-full ~mb-2/4 px-1"
+          data-testid="custominput"
+        >
+          <label
+            class="block ~text-base/lg text-planetGreen font-semibold mb-2"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full p-3 bg-darkModeGray border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-color-1 "
+            id="email"
+            name="email"
+            type="email"
+          />
+        </div>
+      </div>
+      <div
+        class="~mb-2/4"
+      >
+        <label
+          class="block ~text-base/lg md:text-start text-center glow-text font-semibold text-planetGreen mb-2"
+          for="message"
+        >
+          Message
+        </label>
+        <textarea
+          class="w-full text-lightGray bg-darkModeGray p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-color-1 "
+          data-testid="message-input"
+          id="message"
+          name="message"
+          rows="4"
+        />
+      </div>
+      <div
+        class="flex justify-center ~mt-2/6"
+      >
+        <button
+          class="group flex items-center justify-center h-12 w-52 rounded-full bg-gradient-to-r from-color-1 via-color-2 to-color-4 text-white p-[1.5px]"
+        >
+          <div
+            class="relative tracking-wide text-lg font-bold flex rounded-full bg-gray-900 h-full w-full items-center justify-center group-hover:bg- group-hover:text-color-1 duration-500"
+          >
+            Send Message
+            <span
+              class="absolute bottom-2 left-0 w-full h-[2px] bg-color-1 transform scale-x-0 transition-transform duration-500 group-hover:scale-x-[70%]"
+            />
+          </div>
+        </button>
+      </div>
+    </form>
+    <div
+      class="Toastify"
+    />
+  </div>
+</DocumentFragment>
+`;

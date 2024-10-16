@@ -6,7 +6,6 @@ import Hero from "@/app/components/Hero";
 import Technologies from "@/app/components/Technologies";
 import AboutMe from "@/app/components/AboutMe";
 
-
 export default function Home() {
     return (
         <motion.main

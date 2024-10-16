@@ -25,6 +25,7 @@ const Navbar: React.FC = () => {
                             <div className="hidden md:flex justify-center flex-grow">
                                 <div className="flex space-x-12">
                                     <Link
+                                        data-testid="nav-home"
                                         href="/#"
                                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                                         style={{fontFamily: 'var(--font-code)'}}
@@ -32,6 +33,7 @@ const Navbar: React.FC = () => {
                                         HOME
                                     </Link>
                                     <Link
+                                        data-testid="nav-technologies"
                                         href="/#technologies"
                                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                                         style={{fontFamily: 'var(--font-code)'}}
@@ -39,6 +41,7 @@ const Navbar: React.FC = () => {
                                         TECHNOLOGIES
                                     </Link>
                                     <Link
+                                        data-testid="nav-aboutme"
                                         href="/#aboutme"
                                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                                         style={{fontFamily: 'var(--font-code)'}}
@@ -46,6 +49,7 @@ const Navbar: React.FC = () => {
                                         ABOUT ME
                                     </Link>
                                     <Link
+                                        data-testid="nav-projects"
                                         href="/#gallery"
                                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                                         style={{fontFamily: 'var(--font-code)'}}
@@ -53,6 +57,7 @@ const Navbar: React.FC = () => {
                                         PROJECTS
                                     </Link>
                                     <Link
+                                        data-testid="nav-contact"
                                         href="/#contact"
                                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                                         style={{fontFamily: 'var(--font-code)'}}
@@ -76,6 +81,7 @@ const Navbar: React.FC = () => {
                 {/* Mobile Menu */}
                 <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} items-center bg-[#020509]/90 flex flex-col`}>
                     <Link
+                        data-testid="mobile-home"
                         href="/#home"
                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                         style={{fontFamily: 'var(--font-code)'}}
@@ -83,6 +89,7 @@ const Navbar: React.FC = () => {
                         HOME
                     </Link>
                     <Link
+                        data-testid="mobile-technologies"
                         href="/#technologies"
                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                         style={{fontFamily: 'var(--font-code)'}}
@@ -90,6 +97,7 @@ const Navbar: React.FC = () => {
                         TECHNOLOGIES
                     </Link>
                     <Link
+                        data-testid="mobile-aboutme"
                         href="/#aboutme"
                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                         style={{fontFamily: 'var(--font-code)'}}
@@ -97,6 +105,7 @@ const Navbar: React.FC = () => {
                         ABOUT ME
                     </Link>
                     <Link
+                        data-testid="mobile-projects"
                         href="/#gallery"
                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                         style={{fontFamily: 'var(--font-code)'}}
@@ -104,6 +113,7 @@ const Navbar: React.FC = () => {
                         PROJECTS
                     </Link>
                     <Link
+                        data-testid="mobile-contact"
                         href="/#contact"
                         className="text-n-1/50 hover:text-n-1 px-3 py-2 rounded-md text-base font-semibold transition duration-300"
                         style={{fontFamily: 'var(--font-code)'}}

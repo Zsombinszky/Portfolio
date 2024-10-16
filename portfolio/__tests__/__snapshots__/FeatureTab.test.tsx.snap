@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeatureTab component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="border border-white/30 bg-white/60 flex p-2.5 rounded-xl gap-2.5 items-center relative"
+    data-testid="featuretab"
+  >
+    <div
+      class="~h-8/12 ~w-8/12 border border-white rounded-lg inline-flex items-center justify-center"
+    >
+      <div
+        data-testid="dot-lottie"
+      >
+        Mock DotLottiePlayer
+      </div>
+    </div>
+    <div
+      class="font-semibold ~text-sm/lg text-darkModeGray "
+    >
+      Test title
+    </div>
+  </div>
+</DocumentFragment>
+`;

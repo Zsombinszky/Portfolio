@@ -25,6 +25,7 @@ const fadeFromRightWithDelay = (delay: number) => ({
 const AboutMe = () => {
     return (
         <section
+            data-testid="aboutme-section"
             id={"aboutme"}
             className="relative h-screen w-full overflow-hidden bg-cover bg-no-repeat bg-center"
             style={{backgroundImage: 'url(/backgrounds/nbadarkpurple.jpg)'}}
@@ -42,7 +43,7 @@ const AboutMe = () => {
                 }}
                 className="absolute top-[34%] right-8 cursor-pointer rounded-full"
             >
-                <Link href="https://www.codecool.com/" target="_blank" rel="noopener noreferrer">
+                <Link data-testid="codecool-logo" href="https://www.codecool.com/" target="_blank" rel="noopener noreferrer">
                     <motion.div
                         whileHover={{
                             scale: 1.1,
@@ -95,7 +96,7 @@ const AboutMe = () => {
                         variants={fadeFromRightWithDelay(0.8)}
                         className="w-full"
                     >
-                        <p className="~text-lg/xl glow-text font-semibold text-lightGray mb-8">
+                        <p data-testid="message1" className="~text-lg/xl glow-text font-semibold text-lightGray mb-8">
                             {ABOUTME_MESSAGES[0]}
                         </p>
                     </motion.div>
@@ -108,7 +109,7 @@ const AboutMe = () => {
                         variants={fadeFromRightWithDelay(1.2)}
                         className="w-full"
                     >
-                        <p className="~text-lg/xl glow-text font-semibold text-lightGray mb-8">
+                        <p data-testid="message2" className="~text-lg/xl glow-text font-semibold text-lightGray mb-8">
                             {ABOUTME_MESSAGES[1]}
                         </p>
                     </motion.div>
@@ -126,7 +127,7 @@ const AboutMe = () => {
                                 Contact Me
                             </Button>
                         </div>
-                        <p className="~text-lg/xl glow-text font-semibold text-lightGray">
+                        <p data-testid="message3" className="~text-lg/xl glow-text font-semibold text-lightGray">
                             {ABOUTME_MESSAGES[2]}
                         </p>
                     </motion.div>
@@ -140,8 +141,8 @@ const AboutMe = () => {
                 </div>
             </div>
 
-            <div className="absolute hidden md:block -right-14 bottom-0 md:scale-50 lg:scale-75 xl:scale-100">
-                <div className="relative">
+            <div data-testid="computerdeskcontainer" className="absolute hidden md:block -right-14 bottom-0 md:scale-50 lg:scale-75 xl:scale-100">
+                <div data-testid="computerdeskdiv" className="relative">
                     <Image
                         src={neonPcImage}
                         alt="cartoonaboutme"

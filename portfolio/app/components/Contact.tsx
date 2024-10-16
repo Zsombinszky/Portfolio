@@ -6,6 +6,7 @@ import {FindMe} from "@/app/components/FindMe";
 const Contact: React.FC = () => {
     return (
         <section
+            data-testid="contact-section"
             id="contact"
             className="relative h-screen w-full overflow-hidden bg-cover bg-no-repeat bg-center"
             style={{backgroundImage: 'url(/backgrounds/contactbg.jpeg)'}}
@@ -16,7 +17,8 @@ const Contact: React.FC = () => {
                 </h2>
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     <div className="w-full md:w-1/2 flex flex-col items-center">
-                        <p className="~text-xl/2xl px-6 mb-2 glow-text font-semibold text-lightGray text-center">
+                        <p data-testid="contactmessage"
+                           className="~text-xl/2xl px-6 mb-2 glow-text font-semibold text-lightGray text-center">
                             {CONTACT_MESSAGE}
                         </p>
                         <a

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { IconToFindProps } from '@/types';
+import {linkedInSVG} from "@/constants";
 
 const IconToFind = ({ href, d, isTop }: IconToFindProps) => {
     const [isLogoHovered, setIsLogoHovered] = useState(false);
@@ -33,6 +34,7 @@ const IconToFind = ({ href, d, isTop }: IconToFindProps) => {
 
     return (
         <Link
+            data-testid={d === linkedInSVG ? 'linkedin-logo': 'github-logo'}
             href={href}
             ref={iconRef}
             className={`absolute ${isTop ? 'left-8 top-8 bg-black' : 'bottom-8 right-8 bg-white'} ${isLogoHovered ? 'z-20' : 'z-8'} rounded-md inline-block shake-wobble`} // Increase z-index

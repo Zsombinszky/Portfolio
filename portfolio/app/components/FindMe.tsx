@@ -19,7 +19,7 @@ export const FindMe: React.FC = () => {
     };
 
     return (
-        <section className="~mt-6/12 ~mb-4/0">
+        <section data-testid="findme-section" className="~mt-6/12 ~mb-4/0">
             <p className="text-2xl mx glow-text mb-4 text-lightGray font-medium text-center">
                 Or <span className="text-color-1">find</span> me on LinkedIn and GitHub.
             </p>

@@ -28,7 +28,7 @@ const FeatureTabs: React.FC = () => {
     };
 
     return (
-        <div className="bg-black/50 ~p-3/4 ~mx-4/6 rounded-xl">
+        <div data-testid="featuretabs" className="bg-black/50 ~p-3/4 ~mx-4/6 rounded-xl">
             <div className="flex ~gap-3/4">
                 {tabs.map((tab, index) => (
                     <FeatureTab
@@ -41,6 +41,7 @@ const FeatureTabs: React.FC = () => {
             </div>
             <div className="border bg-white/60 ~mt-3/4 border-white/20 p-2.5 rounded-xl">
                 <motion.div
+                    data-testid="featuretabs-imagecontainer"
                     className="aspect-video bg-cover border border-white/20 rounded-lg"
                     style={{
                         backgroundPosition,

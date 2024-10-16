@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomInput component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full ~mb-2/4 px-1"
+    data-testid="custominput"
+  >
+    <label
+      class="block ~text-base/lg text-planetGreen font-semibold mb-2"
+      for="test-input"
+    >
+      Test Label
+    </label>
+    <input
+      class="w-full p-3 bg-darkModeGray border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-color-1 "
+      id="test-input"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;

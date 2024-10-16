@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimatedName component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="font-bold absolute bottom-0 left-0 whitespace-nowrap"
+    style="color: transparent; will-change: transform; transform: translateX(-120%);"
+  >
+    <p
+      class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl"
+    >
+      PÓCS ZSOMBOR
+    </p>
+  </div>
+</DocumentFragment>
+`;

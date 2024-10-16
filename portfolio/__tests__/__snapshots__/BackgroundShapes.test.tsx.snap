@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundShapes Component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="absolute w-full h-full pointer-events-none"
+    data-testid="shapecontainer"
+  >
+    <div>
+      <div
+        class="~h-8/12 ~w-8/12 mb-4 absolute top-[21%] right-[32.8%]"
+        data-testid="dot-lottie-player"
+      />
+      <div
+        class="~h-10/14 ~w-10/14 mb-4 absolute top-[30.6%] left-[19.2%]"
+        data-testid="dot-lottie-player"
+      />
+      <div
+        class="-rotate-12 absolute top-1/4 right-1/3 pointer-events-none"
+      >
+        <div
+          class="~w-4/7 ~h-4/7 bg-gradient-to-tr from-[#23F0C7] to-[#000000] rounded-full drop-shadow-[10px_-10px_8px_rgba(0,0,0,0.8)]"
+          data-testid="green-planet"
+        />
+      </div>
+      <div
+        class="absolute top-[35%] left-[20%] pointer-events-none"
+      >
+        <div
+          class="~w-3/6 ~h-3/6 bg-gradient-to-tl from-[#F433AB] to-[#000000] rounded-full drop-shadow-[-10px_-10px_8px_rgba(0,0,0,0.8)]"
+          data-testid="purple-planet"
+        />
+      </div>
+      <div
+        class="absolute bottom-[25%] left-[45%] pointer-events-none"
+      >
+        <div
+          class="~w-3/6 ~h-3/6 bg-gradient-to-b from-[#FBB02D] via-[#FA8334] to-[#000000] rounded-full drop-shadow-[0px_10px_8px_rgba(0,0,0,0.8)]"
+          data-testid="yellow-planet"
+        />
+      </div>
+      <div
+        class="-rotate-12 absolute top-[12%] right-1/4 pointer-events-none"
+      >
+        <div
+          class="~w-2/4 ~h-2/4 bg-gradient-to-tr from-[#25907C] to-[#000000] rounded-full drop-shadow-[10px_-10px_8px_rgba(0,0,0,0.8)]"
+          data-testid="small-green-planet"
+        />
+      </div>
+      <div
+        class="absolute top-[20%] left-[10%] pointer-events-none"
+      >
+        <div
+          class="~w-2/4 ~h-2/4 bg-gradient-to-tl from-[#AC6AFF] to-[#000000] rounded-full drop-shadow-[-10px_-10px_8px_rgba(0,0,0,0.8)]"
+          data-testid="small-purple-planet"
+        />
+      </div>
+      <div
+        class="absolute rotate-30 bottom-[15%] left-[20%] pointer-events-none"
+      >
+        <div
+          class="~w-3/5 ~h-3/5 bg-gradient-to-b from-[#FB6107] to-[#000000] rounded-full drop-shadow-[-10px_10px_8px_rgba(0,0,0,0.8)]"
+          data-testid="small-yellow-planet"
+        />
+      </div>
+      <div
+        class="absolute top-1/4 right-1/3 w-[2px] h-[2px] sm:w-[2.5px] sm:h-[2.5px] lg:w-[3px] lg:h-[3px] bg-color-4 rounded-full animate-pulse"
+        data-testid="twinking-star"
+        style="will-change: transform;"
+      />
+      <div
+        class="absolute bottom-[25%] left-[46%] w-[2px] h-[2px] sm:w-[2.5px] sm:h-[2.5px] lg:w-[3px] lg:h-[3px] bg-color-2 rounded-full animate-pulse"
+        data-testid="twinking-star"
+        style="will-change: transform;"
+      />
+      <div
+        class="absolute top-[35%] left-[20%] w-[2px] h-[2px] sm:w-[2.5px] sm:h-[2.5px] lg:w-[3px] lg:h-[3px] bg-color-6 rounded-full animate-pulse"
+        data-testid="twinking-star"
+        style="will-change: transform;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

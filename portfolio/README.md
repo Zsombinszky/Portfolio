@@ -26,6 +26,8 @@ embarked on as a developer.
 - **React Icons**: To enhance visual appeal
 - **EmailJS** & **Toastify**: For handling and styling the contact form
 - **Zod**: For robust form validation
+- **Jest**:For unit testing
+- **Playwright**:For E2E test
 
 ## 📑 Table of Contents
 

@@ -17,10 +17,10 @@ const Button = ({children, href, onClick, type}: ButtonProps) => {
     );
 
     const renderLink = () => (
-        <Link href={href ?? "#"} className={linkClasses} onClick={onClick}>
+        <Link data-testid="a-tag" href={href ?? "#"} className={linkClasses} onClick={onClick}>
             <div className={divClasses}>
                 {children}
-                <span className={spanClasses}></span>
+                <span data-testid="test-span" className={spanClasses}></span>
             </div>
         </Link>
     );

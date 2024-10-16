@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurvedTitle component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="h-screen w-full flex flex-col items-center justify-center"
+  >
+    <svg
+      class="w-[60%] max-w-[600px] absolute top-0 transform translate-x-7"
+      data-testid="curve-svg"
+      viewBox="0 0 400 200"
+    >
+      <path
+        d="M 0 150 C 100 50, 300 50, 400 150"
+        data-testid="curve-path"
+        id="curve"
+      />
+      <text
+        width="500"
+      >
+        <textpath
+          class="text-5xl glow-text font-bold"
+          fill="#858DFF"
+          href="#curve"
+          startOffset="50%"
+          text-anchor="middle"
+        >
+          Tech Arsenal
+        </textpath>
+      </text>
+    </svg>
+  </div>
+</DocumentFragment>
+`;

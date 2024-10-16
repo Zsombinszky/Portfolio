@@ -70,7 +70,9 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <div className="w-[80%] md:w-[45%] max-h-[520px] rounded-3xl"
+        <div
+            data-testid="contact-form"
+            className="w-[80%] md:w-[45%] max-h-[520px] rounded-3xl"
              style={{
                  background: 'linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1))',
                  backdropFilter: 'blur(10px)',

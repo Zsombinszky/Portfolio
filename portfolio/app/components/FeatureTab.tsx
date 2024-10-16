@@ -39,6 +39,7 @@ const FeatureTab = (props: FeatureTabProps) => {
 
     return (
         <div
+            data-testid="featuretab"
             ref={tabRef}
             onMouseEnter={handleTabHover}
             className="border border-white/30 bg-white/60 flex p-2.5 rounded-xl gap-2.5 items-center relative"
@@ -46,6 +47,7 @@ const FeatureTab = (props: FeatureTabProps) => {
         >
             {props.selected && (
                 <motion.div
+                    data-testid="selected-overlay"
                     style={{maskImage}}
                     className="absolute inset-0 bg-blue-400/15 -m-px border border-color-8 rounded-xl"
                 ></motion.div>

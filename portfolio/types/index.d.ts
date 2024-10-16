@@ -1,4 +1,4 @@
-import { RefObject, ComponentPropsWithoutRef } from "react";
+import React, { RefObject, ComponentPropsWithoutRef } from "react";
 import { MotionValue } from "framer-motion";
 
 type WordArray = string[];

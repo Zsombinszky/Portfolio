@@ -42,3 +42,8 @@ videos/*
 !videos/*.js
 !videos/*.ts
 public/_next-video
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

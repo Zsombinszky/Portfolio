@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageInput Component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="~mb-2/4"
+  >
+    <label
+      class="block ~text-base/lg md:text-start text-center glow-text font-semibold text-planetGreen mb-2"
+      for="message"
+    >
+      Message
+    </label>
+    <textarea
+      class="w-full text-lightGray bg-darkModeGray p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-color-1 "
+      data-testid="message-input"
+      id="message"
+      rows="2"
+    />
+  </div>
+</DocumentFragment>
+`;

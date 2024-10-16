@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimatedHeroText1 component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="text-lightGray glow-text text-center ~mt-10/20 ~text-2xl/4xl font-medium ~mb-3/6"
+  >
+    <div
+      class="bg-gradient-to-r from-transparent via-black/50  to-transparent"
+      style="opacity: 0; will-change: opacity;"
+    >
+      <span
+        class="inline-block"
+        style="color: rgb(163, 163, 163); opacity: 0; will-change: opacity;"
+      >
+        Hello
+      </span>
+       
+      <span
+        class="inline-block"
+        style="color: rgb(163, 163, 163); opacity: 0; will-change: opacity;"
+      >
+        world
+      </span>
+       
+    </div>
+  </div>
+</DocumentFragment>
+`;

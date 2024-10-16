@@ -26,6 +26,7 @@ const MessageInput: React.FC<MessageInputProps> = ({ register, errors }) => {
                 Message
             </label>
             <textarea
+                data-testid="message-input"
                 id="message"
                 rows={rows}
                 {...register('message')}

@@ -29,6 +29,7 @@ const Hero = () => {
 
     return (
         <section
+            data-testid={"hero-section"}
             ref={container}
             className="h-screen w-full overflow-hidden bg-cover bg-no-repeat bg-center"
             style={{backgroundImage: 'url(/backgrounds/galaxy2.jpeg)'}}
