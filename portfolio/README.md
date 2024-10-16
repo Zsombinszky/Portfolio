@@ -5,6 +5,7 @@ creating modern, user-friendly web applications. This portfolio showcases my ski
 embarked on as a developer.
 
 > **Live Preview:** [Check it out here!](https://portfolio-ashy-phi-19.vercel.app)
+**Note**: I'm currently implementing the Tailwind Fluid library to enhance responsiveness, and the design is still a work in progress. If elements appear misaligned, you may need to temporarily scale the view to 80% (using Ctrl + Mouse Wheel) for optimal display.
 
 ![Portfolio Screenshot](./public/images/thebait.png)
 
